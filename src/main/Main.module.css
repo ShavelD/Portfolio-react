@@ -1,0 +1,17 @@
+.mainBlock {
+    height: 100vh;
+    background-color: burlywood;
+}
+
+
+.text {
+    width: 300px;
+    background-color: turquoise;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: goldenrod;
+
+}
