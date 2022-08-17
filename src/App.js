@@ -5,17 +5,19 @@ import Skills from "./skills/Skills";
 import Projects from "./projects/Project";
 import DistantWork from "./distantWork/DistantWork";
 import Contacts from "./contacts/Contacts";
+import Footer from "./footer/Footer";
 
 function App() {
 
   return (
     <div className="App">
-        <Header />
-        <Main />
-        <Skills />
-        <Projects />
-        <DistantWork />
-        <Contacts />
+        <Header/>
+        <Main/>
+        <Skills/>
+        <Projects/>
+        <DistantWork/>
+        <Contacts/>
+        <Footer title={'Dmitry Shavel'} description={'2022 all rights reserved'}/>
     </div>
   );
 }
