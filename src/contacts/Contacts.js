@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Contacts.module.css'
 import sContainer from './../common/styles/Container.module.css'
 import Form from "./form/Form";
-import Button from "./form/button/Button";
+import Button from './../button/Button'
 
 const Contacts = () => {
     return (
@@ -10,9 +10,9 @@ const Contacts = () => {
             <div className={`${sContainer.container} ${s.container}`}>
                 <h6 className={s.title}>Contacts</h6>
                 <div className={s.contacts}>
-            <Form />
+                    <Form/>
                 </div>
-                <Button />
+                <Button title={'Send'}/>
             </div>
         </div>
     );

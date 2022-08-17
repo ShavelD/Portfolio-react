@@ -3,15 +3,19 @@
     height: 100vh;
 }
 
+
 .container {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+.title {
+    background-color: darksalmon;
+}
+
 .contacts {
     border: 1px solid;
-    width: 70%;
-    height: 55vh;
+    padding-bottom: 15px;
+    min-width: 350px;
 }
