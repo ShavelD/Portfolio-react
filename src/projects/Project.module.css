@@ -1,22 +1,21 @@
-.skillsBlock {
+.projectsBlock {
     height: 100vh;
-    background-color: darkseagreen;
+    background-color: darkgoldenrod;
 }
 
 .title {
     background-color: coral;
 }
 
-.skillsContainer {
+.projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.skills {
-    border: 1px solid;
+.projects {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 185px
+    margin-top: 85px
 }

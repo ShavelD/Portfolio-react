@@ -6,7 +6,7 @@ import sContainer from './../common/styles/Container.module.css'
 
 const Main = () => {
     return (
-        <div className={s.mainBlock}>
+        <div className={`${s.mainBlock} ${sContainer.padding}`}>
             <div className={sContainer.container}>
             <div className={s.text}>
                 <span>Hi There</span>

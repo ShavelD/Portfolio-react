@@ -1,7 +1,15 @@
 .header {
+    width: 100%;
     height: 80px;
     background-color: cadetblue;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.navBlock {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
 }

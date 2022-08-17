@@ -1,0 +1,14 @@
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: deepskyblue;
+}
+
+.skill {
+    width: 250px;
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
