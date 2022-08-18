@@ -11,7 +11,7 @@ const MyProjects = (props) => {
     return (
         <div className={s.project}>
             <div className={s.imgContainer}>
-                <Button title={'Open SocialNetwork'} callBack={OpenTodolist}/>
+                <Button title={'Open SocialNetwork'} callBack={OpenTodolist} />
             </div>
             <div className={s.myProject}>
                 <p>{props.titleProject}</p>
