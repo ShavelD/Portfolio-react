@@ -1,15 +1,21 @@
 import React from 'react';
-import s from './MyProject.module.css'
+import s from './MyProjectSocialNetwork.module.css'
+import Button from "../../button/Button";
 
 const MyProjects = (props) => {
+
+    const OpenTodolist = () => {
+        console.log('PEPKA')
+    }
+
     return (
         <div className={s.project}>
-            <div className={s.iconProject}>
-                    <h4>{props.title}</h4>
+            <div className={s.imgContainer}>
+                <Button title={'Open SocialNetwork'} callBack={OpenTodolist}/>
             </div>
             <div className={s.myProject}>
                 <p>{props.titleProject}</p>
-                <span className={s.description}>
+                <span>
                 {props.description}
             </span>
             </div>

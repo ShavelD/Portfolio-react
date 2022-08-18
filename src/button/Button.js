@@ -1,11 +1,13 @@
 import React from 'react';
-import s from './Button.module.css'
 
 const Button = (props) => {
+
+    const onClickHandler = () => {
+        props.callBack()
+    }
+
     return (
-        <div className={s.container}>
-            <button className={s.sendBtn}>{props.title}</button>
-        </div>
+            <button onClick={onClickHandler}>{props.title}</button>
     );
 };
 

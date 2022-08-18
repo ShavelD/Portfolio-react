@@ -3,5 +3,11 @@
     padding: 10px 15px;
     border-radius: 10px;
     border: 1px silver;
+}
 
+.ads {
+    background-color: gold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px silver;
 }
