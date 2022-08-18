@@ -17,7 +17,7 @@ function App() {
         <Projects/>
         <DistantWork/>
         <Contacts/>
-        <Footer title={'Dmitry Shavel'} description={'2022 all rights reserved'}/>
+        <Footer />
     </div>
   );
 }

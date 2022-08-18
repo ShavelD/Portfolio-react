@@ -1,5 +1,5 @@
 .projectsBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: darkgoldenrod;
 }
 
@@ -18,4 +18,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 85px
+}
+
+@media (min-width: 360px) and (max-width: 390px) {
+    .projects {
+        margin-top: 5px
+
+    }
 }

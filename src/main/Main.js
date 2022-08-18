@@ -9,7 +9,7 @@ const Main = () => {
         <div className={`${s.mainBlock} ${sContainer.padding}`}>
             <div className={sContainer.container}>
             <div className={s.text}>
-                <span>Hi There</span>
+                <span className={s.my_text}>Hi There</span>
                 <h1>I am Dmitry Shavel</h1>
                 <p>Frontend Developer</p>
             </div>

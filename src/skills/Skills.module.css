@@ -20,3 +20,13 @@
     flex-wrap: wrap;
     margin-top: 185px
 }
+
+@media (min-width: 360px) and (max-width: 390px)  {
+    .skills {
+        width: 250px;
+        margin-top: 5px
+    }
+    .skillsBlock{
+        min-height: 70vh;
+    }
+}

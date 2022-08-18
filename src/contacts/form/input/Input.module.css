@@ -11,3 +11,9 @@
     height: 25vh;
     margin-bottom: 15px;
 }
+
+@media (min-width: 360px) and (max-width: 390px) {
+    .container_inner {
+        height: 15vh;
+    }
+}

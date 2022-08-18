@@ -1,17 +1,48 @@
 .footerBlock {
-    height: 30vh;
+    min-height: 25vh;
     background-color: gray;
+}
+
+.padding {
+    padding: 55px 0 15px 0;
 }
 
 .displayBlock {
     border: 1px solid;
-    height: 60px;
-    width: 200px;
+    height: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
     flex-direction: column;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 150px;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: silver;
+}
+
+.margin {
+    margin: 0 auto;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.footer_text {
+    display: flex;
+}
+
+@media (min-width: 360px) and (max-width: 390px)  {
+    .displayBlock {
+        width: 250px;
+    }
 }

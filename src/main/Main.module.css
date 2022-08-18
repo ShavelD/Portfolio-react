@@ -3,7 +3,6 @@
     background-color: burlywood;
 }
 
-
 .text {
     width: 300px;
     background-color: turquoise;
@@ -13,4 +12,12 @@
     width: 300px;
     height: 400px;
     background-color: goldenrod;
+}
+
+@media (min-width: 360px)  {
+    .text {
+        margin: 0 5px;
+        padding: 15px;
+    }
+
 }
