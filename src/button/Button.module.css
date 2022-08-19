@@ -1,14 +1,22 @@
-.default {
-    border-radius: 10px;
-    margin: 10px 0 10px 0;
+.finalClass {
+    background-color: deepskyblue;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 3px;
 }
 
-.red {
-    border-radius: 5px;
-    width: 35px;
-    height: 25px;
-    padding: 1px 12px 1px 12px;
-}
+
+/*.default {*/
+/*    border-radius: 10px;*/
+/*    margin: 10px 0 10px 0;*/
+/*}*/
+
+/*.red {*/
+/*    border-radius: 5px;*/
+/*    width: 35px;*/
+/*    height: 25px;*/
+/*    padding: 1px 12px 1px 12px;*/
+/*}*/
 
 /*button {*/
 /*    position: relative;*/

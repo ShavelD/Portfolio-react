@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './MyProjectSocialNetwork.module.css'
+import s from './MyProjectsTodolist.module.css'
 import Button from "../../button/Button";
 
 const MyProjects = (props) => {
