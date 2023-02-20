@@ -3,11 +3,6 @@ import s from './MyProject.module.scss'
 
 const MyProject = (props) => {
 
-    const OpenSocial = () => {
-        console.log('PIPKA')
-    }
-
-
     return (
         <div className={s.project}>
             <div className={s.imgContainer} style={props.style}>
