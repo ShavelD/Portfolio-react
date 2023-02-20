@@ -1,0 +1,38 @@
+@import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
+
+.mainBlock {
+    min-height: 70vh;
+    background-color: $bgSecondColor;
+    .text {
+        @include text($TitleFontFamily,400,22px,1.2);
+        width: 500px;
+        .text span {
+        }
+        .text h1 {
+            color: $textColor;
+        }
+        .text p {
+          color: $textColor;
+        }
+    }
+
+    .photo {
+        @include image(cover,center,repeat);
+        height: 400px;
+        width: 275px;
+        border-radius: 8px;
+    }
+}
+
+
+
+
+
+/*@media (min-width: 360px)  {*/
+/*    .text {*/
+/*        margin: 0 5px;*/
+/*        padding: 15px;*/
+/*    }*/
+
+/*}*/

@@ -1,18 +1,19 @@
 import React from 'react';
 import s from './Contacts.module.css'
 import sContainer from './../common/styles/Container.module.css'
-import Form from "./form/Form";
 import Button from './../button/Button'
 
 const Contacts = () => {
     return (
         <div className={`${s.contactsBlock} ${sContainer.padding}`}>
             <div className={`${sContainer.container} ${s.container}`}>
-                <h6 className={s.title}>Contacts</h6>
-                <div className={s.contacts}>
-                    <Form/>
-                </div>
-                <Button title={'Send'}/>
+                <h2 className={s.title}>Contacts</h2>
+                    <form className={s.contactsForm}>
+                        <input type={'text'}></input>
+                        <input type={'text'}></input>
+                        <textarea></textarea>
+                    </form>
+                <button type="submit" className={s.submitBtn}>Отправить</button>
             </div>
         </div>
     );

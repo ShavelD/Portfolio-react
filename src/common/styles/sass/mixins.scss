@@ -1,0 +1,15 @@
+@import './variables';
+
+@mixin text($fontFamily,$fontWeight,$fontSize,$lineHeight) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+}
+
+@mixin image($backgroundSize,$backgroundPosition,$backgroundRepeat) {
+  background-size: $backgroundSize;
+  background-position: $backgroundPosition;
+  background-repeat: $backgroundRepeat;
+}
