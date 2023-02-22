@@ -8,7 +8,7 @@ const Skill = (props) => {
             <div className={s.skillOne}>
                 <div style={props.style} className={s.skillOneIcon}></div>
             </div>
-            <h3>{props.title}</h3>
+            <h2>{props.title}</h2>
             <span className={s.description}>
                 {props.description}
             </span>

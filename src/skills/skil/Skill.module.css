@@ -15,14 +15,19 @@
     height: 50px;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 1s
 }
 
+
+.skillOneIcon:hover {
+    transform: scale(1.2);
+}
 .skillOne:hover {
     border: 2px solid #CBA5EA;
     transition: 0.2s;
 }
 
-.skill h3 {
+.skill h2 {
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;

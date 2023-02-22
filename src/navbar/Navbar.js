@@ -4,10 +4,10 @@ import s from './Navbar.module.css'
 const Navbar = () => {
     return (
         <div className={s.navbar}>
-            <a href="">Main</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contacts</a>
+            <a href="#">Main</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contacts">Contacts</a>
         </div>
     );
 };

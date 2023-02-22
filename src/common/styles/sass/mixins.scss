@@ -13,3 +13,10 @@
   background-position: $backgroundPosition;
   background-repeat: $backgroundRepeat;
 }
+
+@mixin textPosition($display, $justifyContent, $flexWrap) {
+  display: $display;
+  justify-content: $justifyContent;
+  flex-wrap: $flexWrap;
+  background-color: $bgSecondColor;
+}

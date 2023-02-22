@@ -28,9 +28,9 @@ const Skills = () => {
     }
 
     return (
-        <div className={`${s.skillsBlock} ${sContainer.padding}`}>
+        <div id='Skills' className={`${s.skillsBlock} ${sContainer.padding}`}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
-                <Title text={"Skills"}/>
+                <Title title={"Skills"}/>
                 <div className={s.skills}>
                     <Skill style={oneIcon} title={'Development'} description={"React, Redux, JavaScript, TypeScript, AXIOS etc"}/>
                     <Skill style={twoIcon} title={'Foundation'} description={"HTML5, CSS3, SASS, Team player, English - intermediate (in progress)"}/>
