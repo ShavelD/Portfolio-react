@@ -1,14 +1,9 @@
 import React from 'react';
-import s from './Button.module.css'
+import s from './Button.module.scss'
 
 const Button = (props) => {
-
-    const onClickHandler = () => {
-        props.callBack()
-    }
-
     return (
-        <button onClick={onClickHandler} className={s.finalClass}>{props.title}</button>
+        <a href="" className={s.btn}>{props.title}</a>
     );
 };
 

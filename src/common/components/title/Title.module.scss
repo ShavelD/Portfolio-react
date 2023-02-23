@@ -2,7 +2,7 @@
 @import './../../styles/sass/mixins';
 
 .title {
-  @include text($TitleFontFamily,300,45px,1.2);
+  @include text($TitleFontFamily,300,40px,1.2);
   letter-spacing: 0;
   line-height: 1.15789em;
   word-wrap: break-word;
