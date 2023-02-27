@@ -1,5 +1,5 @@
 import {useFormik} from "formik";
-import s from './ContactsForm.module.css'
+import s from './ContactsForm.module.scss'
 import axios from "axios";
 
 

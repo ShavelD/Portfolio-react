@@ -1,0 +1,32 @@
+@import '../../common/styles/sass/variables';
+//@import './../common/styles/sass/mixins';
+
+.form {
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  display: flex
+}
+
+.input, .textarea {
+  font: 400 14px/1.8 'Poppins', sans-serif;
+  height: calc(1.5em + 0.75rem + 2px);
+  line-height: 1.5;
+  width: 480px;
+  margin: 10px;
+  background-color: $bgSecondColor;
+  border: 1px solid #4a4a4a;
+  font-size: 12px;
+  color: white;
+  padding: 0 25px;
+  border-radius: 0;
+
+  @media screen and (max-width: 406px) {
+    max-width: 190px;
+  }
+}
+
+.textarea  {
+  min-height: 20vh;
+  padding-top: 8px;
+}

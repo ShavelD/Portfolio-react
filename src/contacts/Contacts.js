@@ -9,10 +9,7 @@ const Contacts = () => {
         <div id='Contacts' className={`${s.contactsBlock} ${sContainer.padding}`}>
             <div className={`${sContainer.container} ${s.container}`}>
                 <Title title={"Contact"}/>
-                   <div>
-                       <ContactsForm />
-                   </div>
-                    <button type="submit" >Send Message</button>
+                <ContactsForm/>
             </div>
         </div>
     );
