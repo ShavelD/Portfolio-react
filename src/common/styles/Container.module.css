@@ -7,10 +7,12 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .padding {
     padding: 55px 0;
+    position: relative;
 }
 
 /*@media (min-width: 360px) and (max-width: 390px)  {*/

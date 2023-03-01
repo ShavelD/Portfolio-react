@@ -7,6 +7,7 @@ import one from "../assets/icons/q.png";
 import two from "../assets/icons/two.png";
 import three from "../assets/icons/three.png";
 import four from "../assets/icons/four.png";
+import Fade from 'react-reveal/Fade';
 
 
 const Skills = () => {
@@ -30,6 +31,7 @@ const Skills = () => {
     return (
         <div id='Skills' className={`${s.skillsBlock} ${sContainer.padding}`}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
+                <Fade left>
                 <Title title={"Skills"}/>
                 <div className={s.skills}>
                     <Skill style={oneIcon} title={'Development'} description={"React, Redux, JavaScript, TypeScript, AXIOS etc"}/>
@@ -37,6 +39,7 @@ const Skills = () => {
                     <Skill style={threeIcon} title={'Testing'} description={"Unit Tests, Storybook"}/>
                     <Skill style={fourIcon} title={'Design'} description={"Material UI,Ant Design"}/>
                 </div>
+                </Fade>
             </div>
         </div>
     );

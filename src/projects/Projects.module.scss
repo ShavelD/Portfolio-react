@@ -3,7 +3,7 @@
 
 .projectsBlock {
   min-height: 70vh;
-  background-color: $bgSecondColor;
+  background-color: $bgColor;
 
   .projectsContainer {
     @include textPosition(flex, center, wrap);

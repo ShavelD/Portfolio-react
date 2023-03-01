@@ -2,7 +2,7 @@
 
 .skillsBlock {
     min-height: 100vh;
-    background-color: $bgColor;
+    background-color: $bgSecondColor;
 }
 
 .title {
@@ -25,12 +25,14 @@
     box-sizing: border-box;
 }
 
-/*@media (min-width: 360px) and (max-width: 390px)  {*/
-/*    .skills {*/
-/*        width: 250px;*/
-/*        margin-top: 5px*/
-/*    }*/
-/*    .skillsBlock{*/
-/*        min-height: 70vh;*/
-/*    }*/
-/*}*/
+@media (min-width: 360px) and (max-width: 586px)  {
+   .skills {
+        margin-top: 10px;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+   }
+    .skillsBlock{
+       min-height: 70vh;
+   }
+}

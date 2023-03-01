@@ -1,19 +1,28 @@
 @import './../common/styles/sass/variables';
 @import './../common/styles/sass/mixins';
 
+
 .mainBlock {
   min-height: 70vh;
-  background-color: $bgSecondColor;
+  background-color: $bgColor;
+
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    botomm: 0;
+    right: 0;
+    opacity: 0.3;
+  }
 
   .text {
     @include text($TitleFontFamily, 400, 22px, 1.2);
     @include flex(column, flex-start, flex-start, nowrap);
-    span {
 
+    span {
       font-size: 22px;
 
       &:nth-child(2) {
-
         @include text($TitleFontFamily, 700, 50px, 1.2);
         letter-spacing: 5px;
         margin: 10px 0;
@@ -24,9 +33,9 @@
           }
           @include text($TitleFontFamily, 700, 50px, 1.2);
           letter-spacing: 5px;
-          position: relative;
           z-index: 0;
           display: inline-block;
+          position: relative;
 
           &:before {
             content: "";
@@ -48,6 +57,7 @@
     h1 {
       @include text($TitleFontFamily, 400, 28px, 1.8);
       margin: 0;
+      padding-bottom: 35px;
 
     }
 
@@ -58,14 +68,15 @@
 
   .animation {
     width: 250px;
-    color:white;
+    color: white;
     font-size: 22px;
     font-family: 'Marck Script', cursive;
-    white-space:nowrap;
-    overflow:hidden;
+    white-space: nowrap;
+    overflow: hidden;
     -webkit-animation: type 4s steps(50, end);
     animation: type 4s steps(50, end);
   }
+
   .photo {
     @include image(cover, center, repeat);
     position: relative;
@@ -73,34 +84,40 @@
     z-index: 1;
     border-radius: 8px;
     box-sizing: border-box;
-  } .image {
-        height: 400px;
-        width: 275px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        &:before {
-          content: "";
-          position: absolute;
-          width: 102%;
-          height: 110%;
-          border: 5px solid  $primaryColor;
-          left: 15px;
-          top: -30px;
-          z-index: -1;
-        }
-      }
-
   }
 
+  .image {
+    height: 400px;
+    width: 275px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    &:before {
+      content: "";
+      position: absolute;
+      width: 102%;
+      height: 110%;
+      border: 5px solid $primaryColor;
+      left: 15px;
+      top: -30px;
+      z-index: -1;
+    }
+  }
 
-@keyframes type{
-  from { width: 0; }
 }
 
-@-webkit-keyframes type{
-  from { width: 0; }
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
 }
 
 /*@media (min-width: 360px)  {*/

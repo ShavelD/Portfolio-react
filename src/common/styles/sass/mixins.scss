@@ -18,7 +18,7 @@
   display: $display;
   justify-content: $justifyContent;
   flex-wrap: $flexWrap;
-  background-color: $bgSecondColor;
+  background-color: $bgColor;
 }
 
 @mixin flex($direction, $justifyContent, $alignItems, $wrap) {

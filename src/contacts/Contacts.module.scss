@@ -2,7 +2,7 @@
 @import './../button/Button.module';
 
 .contactsBlock {
-    background-color: $bgColor;
+    background-color: $bgSecondColor;
     min-height: 40vh;
     button[type="submit"]{
         @extend .btn;
