@@ -1,10 +1,24 @@
 @import './../common/styles/sass/variables';
 @import './../common/styles/sass/mixins';
 
+.positionAnimation {
+  position: relative;
+}
 
-.mainBlock {
-  min-height: 70vh;
+.container {
+  min-height: 92vh;
   background-color: $bgColor;
+  display: flex;
+
+  .containerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 80%;
+  }
 
   .particles {
     position: absolute;
@@ -14,7 +28,6 @@
     right: 0;
     opacity: 0.3;
   }
-
   .text {
     @include text($TitleFontFamily, 400, 22px, 1.2);
     @include flex(column, flex-start, flex-start, nowrap);
@@ -52,29 +65,21 @@
           }
         }
       }
+      &:nth-child(3){
+        @include text($TitleFontFamily, 400, 28px, 1.8);
+        margin: 0;
+        padding-bottom: 35px;
+        .cursorSize {
+         font-size: 35px;
+          width: 10px;
+        }
+      }
     }
 
-    h1 {
-      @include text($TitleFontFamily, 400, 28px, 1.8);
-      margin: 0;
-      padding-bottom: 35px;
-
-    }
 
     //@media screen and (max-width: 1143px) {
     //    align-items: center;
     //}
-  }
-
-  .animation {
-    width: 250px;
-    color: white;
-    font-size: 22px;
-    font-family: 'Marck Script', cursive;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: type 4s steps(50, end);
-    animation: type 4s steps(50, end);
   }
 
   .photo {
@@ -84,6 +89,10 @@
     z-index: 1;
     border-radius: 8px;
     box-sizing: border-box;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(8, 5)
+    }
   }
 
   .image {

@@ -4,6 +4,8 @@ import sContainer from './../common/styles/Container.module.css'
 import myPhotoImage from "../assets/image/my-photo-miniS.jpg";
 import Particle from "../assets/animation/Particle";
 import Fade from 'react-reveal/Fade';
+import ReactTypingEffect from 'react-typing-effect';
+
 
 
 
@@ -15,20 +17,24 @@ const Main = () => {
 
 
     return (
-        <div className={`${sContainer.padding} ${s.mainBlock} `}>
+        <div className={`${s.positionAnimation} ${s.container} `}>
+            <div className={s.containerInner}>
             <Particle/>
             <Fade top>
-            <div className={sContainer.container}>
                 <div className={s.text}>
                     <span>Hi There</span>
                     <span>I am <span>Dmitry Shavel</span></span>
-                    <h1 className={s.animation}>Frontend Developer</h1>
+                    <ReactTypingEffect
+                        text="{ Frontend Developer }"
+                        cursorClassName={s.cursorSize}/>
+
                 </div>
                 <div className={s.photo}>
                     <div style={myPhoto} className={s.image}></div>
                 </div>
-            </div>
             </Fade>
+            </div>
+
         </div>
     );
 };

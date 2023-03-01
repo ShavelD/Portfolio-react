@@ -34,10 +34,10 @@ const Skills = () => {
                 <Fade left>
                 <Title title={"Skills"}/>
                 <div className={s.skills}>
-                    <Skill style={oneIcon} title={'Development'} description={"React, Redux, JavaScript, TypeScript, AXIOS etc"}/>
-                    <Skill style={twoIcon} title={'Foundation'} description={"HTML5, CSS3, SASS, Team player, English - intermediate (in progress)"}/>
-                    <Skill style={threeIcon} title={'Testing'} description={"Unit Tests, Storybook"}/>
-                    <Skill style={fourIcon} title={'Design'} description={"Material UI,Ant Design"}/>
+                    <Skill style={oneIcon} title={'Development'} description={"React, Redux, JavaScript/TypeScript, AXIOS etc"}/>
+                    <Skill style={twoIcon} title={'Foundation'} description={"HTML5, CSS3, SASS, English - intermediate (in progress)"}/>
+                    <Skill style={threeIcon} title={'Testing'} description={"Unit Tests, Storybook, Git, Postman"}/>
+                    <Skill style={fourIcon} title={'Design'} description={"Material UI, Ant Design"}/>
                 </div>
                 </Fade>
             </div>

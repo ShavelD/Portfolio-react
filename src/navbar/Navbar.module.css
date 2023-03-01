@@ -1,5 +1,5 @@
 .navbar {
-    width: 300px;
+    width: 380px;
     display: flex;
     justify-content: space-between;
 }
@@ -7,4 +7,8 @@
 .navbar a {
     color: white;
     text-decoration: none;
+}
+
+.navbar a:nth-child(4) {
+   padding-right: 4px;
 }
