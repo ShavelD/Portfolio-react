@@ -13,6 +13,9 @@
     height: 250px;
     background-position: center;
     background-size: cover;
+    //@media screen and (max-width: 466px) {
+    //  height: 70%
+    //}
     //box-shadow: #2b2b2b;
     //opacity: 0.8;
     .overlay {
@@ -21,6 +24,9 @@
       background-color: rgba(0, 0, 0, 0.5);
       opacity: 0;
       transition: opacity .25s ease-in-out;
+      //@media screen and (max-width: 466px) {
+      //  height: 70%
+      //}
       &:hover {
         opacity: 1;
       }

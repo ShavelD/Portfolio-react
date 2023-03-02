@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss'
-import sContainer from './../common/styles/Container.module.css'
+import Tilt from 'react-tilt'
 import myPhotoImage from "../assets/image/my-photo-miniS.jpg";
 import Particle from "../assets/animation/Particle";
 import Fade from 'react-reveal/Fade';
@@ -17,7 +17,7 @@ const Main = () => {
 
 
     return (
-        <div className={`${s.positionAnimation} ${s.container} `}>
+        <div id="Main" className={`${s.positionAnimation} ${s.container} `}>
             <div className={s.containerInner}>
             <Particle/>
             <Fade top>
@@ -29,9 +29,11 @@ const Main = () => {
                         cursorClassName={s.cursorSize}/>
 
                 </div>
-                <div className={s.photo}>
-                    <div style={myPhoto} className={s.image}></div>
-                </div>
+                <Tilt className="Tilt" options={{ max : 25, scale:          1}}>
+                    <div className={s.photo}>
+                        <div style={myPhoto} className={s.image}></div>
+                    </div>                </Tilt>
+
             </Fade>
             </div>
 
