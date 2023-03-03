@@ -8,12 +8,30 @@
     align-items: stretch;
     flex-wrap: nowrap;
     a {
-        color: white;
+        position: relative;
+        cursor: pointer;
+        line-height: 1;
+        transition: color .2s ease-out;
         text-decoration: none;
-        &:hover {
-            color: $primaryColor;
+        color: white;
 
-        }
+    }
+    a:after {
+        display: block;
+        position: absolute;
+        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 3px; /*задаём ширину линии*/
+        background-color: #CBA5EA; /*задаём цвет линии*/
+        content: "";
+        transition: width 0.3s ease-out; /*задаём время анимации*/
+        left: 50%; transform: translateX(-50%);
+
+    }
+
+    a:hover:after,
+    a:focus:after {
+        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
     }
     .active {
         color: $primaryColor;

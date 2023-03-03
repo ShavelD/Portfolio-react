@@ -52,7 +52,11 @@ const BurgerNav = () => {
                 duration={500}
             >Contacts</Link>
             </div>
-            <div onClick={onButtonClick} className={s.burgerBtn}></div>
+            <div onClick={onButtonClick} className={s.burgerBtn}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     );
 };
