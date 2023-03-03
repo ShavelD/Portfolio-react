@@ -31,15 +31,26 @@ const Skills = () => {
     return (
         <div id='Skills' className={`${s.skillsBlock} ${sContainer.padding}`}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
-                <Fade left>
+                <Fade top>
                 <Title title={"Skills"}/>
-                <div className={s.skills}>
-                    <Skill style={oneIcon} title={'Development'} description={"React, Redux, JavaScript/TypeScript, AXIOS etc"}/>
-                    <Skill style={twoIcon} title={'Foundation'} description={"HTML5, CSS3, SASS, English - intermediate (in progress)"}/>
-                    <Skill style={threeIcon} title={'Testing'} description={"Unit Tests, Storybook, Git, Postman"}/>
-                    <Skill style={fourIcon} title={'Design'} description={"Material UI, Ant Design"}/>
-                </div>
                 </Fade>
+                <div className={s.skills}>
+                    <Fade bottom>
+                        <Skill style={oneIcon} title={'Development'} description={"React, Redux, JavaScript/TypeScript, AXIOS etc"}/></Fade>
+                    <Fade bottom>
+
+                    <Skill style={twoIcon} title={'Foundation'} description={"HTML5, CSS3, SASS, English - intermediate (in progress)"}/>
+                    </Fade>
+                    <Fade bottom>
+
+                    <Skill style={threeIcon} title={'Testing'} description={"Unit Tests, Storybook, Git, Postman"}/>
+                    </Fade>
+                    <Fade bottom>
+
+                    <Skill style={fourIcon} title={'Design'} description={"Material UI, Ant Design"}/>
+                    </Fade>
+                </div>
+
             </div>
         </div>
     );

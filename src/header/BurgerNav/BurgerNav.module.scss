@@ -20,7 +20,6 @@
     transform: translate(0, -130px);
     transition: 0.8s;
     //display: none;
-
     //a {
     //  color: white;
     //  text-decoration: none;
@@ -43,23 +42,6 @@
         color: $primaryColor;
         font-weight: bold;
       }
-    a:after {
-      display: block;
-      position: absolute;
-      left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-      width: 0;/*задаём длинну линии до наведения курсора*/
-      height: 3px; /*задаём ширину линии*/
-      background-color: #CBA5EA; /*задаём цвет линии*/
-      content: "";
-      transition: width 0.3s ease-out; /*задаём время анимации*/
-      left: 50%; transform: translateX(-50%);
-
-    }
-
-    a:hover:after,
-    a:focus:after {
-      width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-    }
     //.active {
     //  color: $primaryColor;
     //  font-weight: bold;
@@ -74,8 +56,6 @@
     //display: flex;
     transform: translate(0, 0);
     height: 115px;
-
-
   }
 
   //.burgerBtn {

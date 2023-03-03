@@ -22,7 +22,9 @@ const Projects = () => {
         <div id='Projects' className={`${s.projectsBlock} ${sContainer.padding}`}>
             <div className={`${s.projectsContainer} ${sContainer.container}`}>
                 <Fade right>
-                <Title title={"My Projects"}/>
+                    <Fade top>
+                    <Title title={"My Projects"}/>
+                    </Fade>
                 <div className={s.projects}>
                     <MyProject style={social}
                                titleProject={'Social Network'}
