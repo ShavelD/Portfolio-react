@@ -29,7 +29,6 @@ export const ContactsForm = () => {
     })
 
     return (
-        <div className={s.container}>
             <form className={s.form} onSubmit={formik.handleSubmit}>
                 <label>
                     <input className={s.input} type="text" placeholder={'Name'}
@@ -45,7 +44,6 @@ export const ContactsForm = () => {
                 </label>
                 <button className={s.btn} type="submit">SEND MESSAGE</button>
             </form>
-        </div>
     )
 
 }

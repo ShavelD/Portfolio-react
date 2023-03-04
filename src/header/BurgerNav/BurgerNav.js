@@ -40,7 +40,7 @@ const BurgerNav = () => {
                     to="Projects"
                     spy={true}
                     smooth={true}
-                    offset={-160}
+                    offset={-110}
                     duration={500}
                 >Projects</Link>
             <Link
@@ -48,7 +48,7 @@ const BurgerNav = () => {
                 to="Contacts"
                 spy={true}
                 smooth={true}
-                offset={-65}
+                offset={-75}
                 duration={500}
             >Contacts</Link>
             </div>
