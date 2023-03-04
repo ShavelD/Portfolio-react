@@ -29,21 +29,21 @@ export const ContactsForm = () => {
     })
 
     return (
-            <form className={s.form} onSubmit={formik.handleSubmit}>
-                <label>
-                    <input className={s.input} type="text" placeholder={'Name'}
-                           {...formik.getFieldProps('name')}/>
-                </label>
-                <label>
-                    <input className={s.input} type="text" placeholder={'Your Email'}
-                           {...formik.getFieldProps('email')}/>
-                </label>
-                <label>
+        <form className={s.form} onSubmit={formik.handleSubmit}>
+            <label>
+                <input className={s.input} type="text" placeholder={'Name'}
+                       {...formik.getFieldProps('name')}/>
+            </label>
+            <label>
+                <input className={s.input} type="text" placeholder={'Your Email'}
+                       {...formik.getFieldProps('email')}/>
+            </label>
+            <label>
                         <textarea className={s.textarea} placeholder={'Your Message'}
                                   {...formik.getFieldProps('message')}/>
-                </label>
-                <button className={s.btn} type="submit">SEND MESSAGE</button>
-            </form>
+            </label>
+            <button className={s.btn} type="submit">SEND MESSAGE</button>
+        </form>
     )
 
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Footer.module.scss'
-import sContainer from './../common/styles/Container.module.css'
+import sContainer from '../common/styles/Container.module.scss'
 import Zoom from 'react-reveal/Zoom';
 import link from "../assets/icons/link.svg";
 import telegram from "../assets/icons/telegram.svg";
@@ -23,20 +23,20 @@ const Footer = () => {
     return (
         <div className={`${s.footer} ${s.padding}`}>
             <Zoom cascade>
-            <div className={`${sContainer.container} ${s.footerContainer}`}>
-                <div className={s.socialIcons}>
-                    <a href={"https://t.me/ConstAdd"}>
-                       <div style={telega} className={s.socialIcon}></div>
-                    </a>
-                    <a href={"https://www.linkedin.com/in/frontend-dev-by/"}>
-                       <div style={linkedin} className={s.socialIcon}></div>
-                    </a>
-                    <a href={"https://github.com/ShavelD"}>
-                        <div style={gitHub} className={s.socialIcon}></div>
-                    </a>
+                <div className={`${sContainer.container} ${s.footerContainer}`}>
+                    <div className={s.socialIcons}>
+                        <a href={"https://t.me/ConstAdd"}>
+                            <div style={telega} className={s.socialIcon}></div>
+                        </a>
+                        <a href={"https://www.linkedin.com/in/frontend-dev-by/"}>
+                            <div style={linkedin} className={s.socialIcon}></div>
+                        </a>
+                        <a href={"https://github.com/ShavelD"}>
+                            <div style={gitHub} className={s.socialIcon}></div>
+                        </a>
+                    </div>
+                    <span className={s.copyright}>© 2023 all rights reserved</span>
                 </div>
-                <span className={s.copyright}>© 2023 all rights reserved</span>
-            </div>
             </Zoom>
         </div>
     );

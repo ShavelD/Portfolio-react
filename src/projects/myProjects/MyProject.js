@@ -39,8 +39,10 @@ const MyProject = (props) => {
                         <h3>{props.title}</h3>
                         <p>{props.description}</p>
                         <div className={s.links}>
-                            <a href={props.linkDemo} className={s.btnDemo} target="_blank" rel="noreferrer">view demo</a>
-                            <a href={props.linkCode} className={s.btnCode} target="_blank" rel="noreferrer">view code</a>
+                            <a href={props.linkDemo} className={s.btnDemo} target="_blank" rel="noreferrer">view
+                                demo</a>
+                            <a href={props.linkCode} className={s.btnCode} target="_blank" rel="noreferrer">view
+                                code</a>
                         </div>
                     </div>
                 </div>

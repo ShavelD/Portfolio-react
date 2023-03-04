@@ -28,6 +28,7 @@
     right: 0;
     opacity: 0.3;
   }
+
   .text {
     @include text($TitleFontFamily, 400, 22px, 1.2);
     @include flex(column, flex-start, flex-start, nowrap);
@@ -65,21 +66,18 @@
           }
         }
       }
-      &:nth-child(3){
+
+      &:nth-child(3) {
         @include text($TitleFontFamily, 400, 28px, 1.8);
         margin: 0;
         padding-bottom: 35px;
+
         .cursorSize {
-         font-size: 35px;
+          font-size: 35px;
           width: 10px;
         }
       }
     }
-
-
-    //@media screen and (max-width: 1143px) {
-    //    align-items: center;
-    //}
   }
 
   .photo {
@@ -126,10 +124,3 @@
   }
 }
 
-/*@media (min-width: 360px)  {*/
-/*    .text {*/
-/*        margin: 0 5px;*/
-/*        padding: 15px;*/
-/*    }*/
-
-/*}*/

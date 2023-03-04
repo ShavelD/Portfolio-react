@@ -24,7 +24,6 @@ export default Title;
 // }
 
 
-
 // const Title = (props) => {
 //     return (
 //         <div className={s.title}>

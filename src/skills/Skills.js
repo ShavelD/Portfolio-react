@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skills.module.scss'
-import sContainer from './../common/styles/Container.module.css'
+import sContainer from '../common/styles/Container.module.scss'
 import Skill from "./skil/Skill";
 import Title from "../common/components/title/Title";
 import react from "../assets/icons/react-native.svg";

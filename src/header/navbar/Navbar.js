@@ -1,18 +1,12 @@
 import React from 'react';
 import s from './Navbar.module.scss'
-import { Link, animateScroll as scroll } from "react-scroll";
-
+import {Link, animateScroll as scroll} from "react-scroll";
 
 
 const Navbar = () => {
     return (
         <div className={s.navbar}>
-            {/*<a href="#">Main</a>*/}
-            {/*<a href="#Skills">Skills</a>*/}
-            {/*<a href="#Projects">Projects</a>*/}
-            {/*<a href="#Contacts">Contacts</a>*/}
             <Link
-                // activeClass={s.active}
                 to="Main"
                 spy={true}
                 smooth={true}

@@ -1,108 +1,72 @@
 
 .skillOne {
-    padding: 25px;
-    background: rgba(255,255,255,0.1);
-    transform: rotate(45deg);
-    transform-origin: center;
-    border: 2px solid transparent;
-    margin-bottom: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transform-origin: center;
+  border: 2px solid transparent;
+  margin-bottom: 30px;
 }
-
-
 
 .skillOneIcon {
-    background-position: center;
-    transform: rotate(-45deg);
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 1s
+  background-position: center;
+  transform: rotate(-45deg);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1s
 }
 
-
 .skillOne:hover {
-    border: 2px solid #CBA5EA;
-    transition: 0.2s;
+  border: 2px solid #CBA5EA;
+  transition: 0.2s;
 }
 
 .skill h2 {
-    color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
-    line-height: 1.2;
-    font-weight: 400;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 .description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    line-height: 1.8;
-    font-weight: 400;
-    color: #fff;
-
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #fff;
 }
 
 .skill {
-    margin-top: 15px;
-    width: 220px;
-    padding: 10px;
+  margin-top: 15px;
+  width: 220px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 360px) and (max-width: 586px) {
+  .skillOne {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transform-origin: center;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+  }
+  .skill {
+    margin-top: 35px;
+    width: 150px;
+    padding: 0 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
 }
-
-@media (min-width: 360px) and (max-width: 586px) {
-    .skillOne {
-        padding: 15px;
-        background: rgba(255,255,255,0.1);
-        transform: rotate(45deg);
-        transform-origin: center;
-        border: 1px solid transparent;
-        margin-bottom: 20px;
-    }
-    .skill {
-        margin-top: 35px;
-        width: 150px;
-        padding: 0 10px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-
-/*@media (min-width: 360px) and (max-width: 390px) {*/
-/*    .skill {*/
-/*        margin: 0 0 10px 0;*/
-/*        padding-bottom: 5px;*/
-/*    }*/
-/*}*/
-
-/*media (min-width: 1200px) {*/
-
-/*}*/
-
-/*!* Portrait tablets and medium desktops *!*/
-/*media (min-width: 992px) and (max-width: 1199px) {*/
-
-/*}*/
-
-/*!* Portrait tablets and small desktops *!*/
-/*media (min-width: 768px) and (max-width: 991px) {*/
-
-/*}*/
-
-/*!* Landscape phones and portrait tablets *!*/
-/*media (max-width: 767px) {*/
-
-/*}*/
-
-/*!* Landscape phones and smaller *!*/
-/*media (max-width: 480px) {*/
-
-/*}*/

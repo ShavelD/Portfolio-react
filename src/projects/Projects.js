@@ -4,7 +4,7 @@ import MyProject from "./myProjects/MyProject";
 import Title from "./../common/components/title/Title"
 import TodoImage from "./../assets/image/images.png"
 import SocialImage from "./../assets/image/SocialNetworking.png"
-import sContainer from "../common/styles/Container.module.css";
+import sContainer from "../common/styles/Container.module.scss";
 import Fade from 'react-reveal/Fade';
 
 

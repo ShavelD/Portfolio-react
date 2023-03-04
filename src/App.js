@@ -9,17 +9,17 @@ import Footer from "./footer/Footer";
 
 function App() {
 
-  return (
-    <div className="App">
-        <Header/>
-        <Main/>
-        <Skills/>
-        <Projects/>
-        {/*<DistantWork/>*/}
-        <Contacts/>
-        <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            {/*<DistantWork/>*/}
+            <Contacts/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

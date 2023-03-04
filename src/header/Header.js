@@ -7,8 +7,8 @@ const Header = () => {
     return (
         <div className={s.header}>
             <div className={s.navBlock}>
-                <Navbar />
-                <BurgerNav />
+                <Navbar/>
+                <BurgerNav/>
             </div>
         </div>
     );
