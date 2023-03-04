@@ -22,8 +22,11 @@
   padding: 0 25px;
   border-radius: 0;
 
-  @media screen and (max-width: 416px) {
-    max-width: 190px;
+  @media screen and (max-width: 412px) {
+    max-width: 260px;
+  }
+  @media screen and (min-width: 412px) and (max-width: 422px) {
+    max-width: 275px;
   }
 }
 

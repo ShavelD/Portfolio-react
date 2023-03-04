@@ -3,54 +3,48 @@ import s from './Skills.module.scss'
 import sContainer from './../common/styles/Container.module.css'
 import Skill from "./skil/Skill";
 import Title from "../common/components/title/Title";
-import one from "../assets/icons/q.png";
-import two from "../assets/icons/two.png";
-import three from "../assets/icons/three.png";
-import four from "../assets/icons/four.png";
+import react from "../assets/icons/react-native.svg";
+import bricks from "../assets/icons/bricks.svg";
+import checklist from "../assets/icons/checklist.svg";
+import design from "../assets/icons/design.svg";
 import Fade from 'react-reveal/Fade';
 
 
 const Skills = () => {
 
-    const oneIcon = {
-        backgroundImage: `url(${one})`,
+    const reactIcon = {
+        backgroundImage: `url(${react})`,
     }
 
-    const twoIcon = {
-        backgroundImage: `url(${two})`,
+    const bricksIcon = {
+        backgroundImage: `url(${bricks})`,
     }
 
-    const threeIcon = {
-        backgroundImage: `url(${three})`,
+    const checklistIcon = {
+        backgroundImage: `url(${checklist})`,
     }
 
-    const fourIcon = {
-        backgroundImage: `url(${four})`,
+    const designIcon = {
+        backgroundImage: `url(${design})`,
     }
 
     return (
         <div id='Skills' className={`${s.skillsBlock} ${sContainer.padding}`}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
                 <Fade top>
-                <Title title={"Skills"}/>
+                    <Title title={"Skills"}/>
                 </Fade>
-                <div className={s.skills}>
-                    <Fade bottom>
-                        <Skill style={oneIcon} title={'Development'} description={"React, Redux, JavaScript/TypeScript, AXIOS etc"}/></Fade>
-                    <Fade bottom>
-
-                    <Skill style={twoIcon} title={'Foundation'} description={"HTML5, CSS3, SASS, English - intermediate (in progress)"}/>
-                    </Fade>
-                    <Fade bottom>
-
-                    <Skill style={threeIcon} title={'Testing'} description={"Unit Tests, Storybook, Git, Postman"}/>
-                    </Fade>
-                    <Fade bottom>
-
-                    <Skill style={fourIcon} title={'Design'} description={"Material UI, Ant Design"}/>
-                    </Fade>
-                </div>
-
+                <Fade bottom>
+                    <div className={s.skills}>
+                        <Skill style={reactIcon} title={'Development'}
+                               description={"React,  Redux/Toolkit,  TypeScript,  Rest api,  Axios etc"}/>
+                        <Skill style={bricksIcon} title={'Foundation'}
+                               description={"JavaScript,  HTML5,  CSS3,  Sass,  Less"}/>
+                        <Skill style={checklistIcon} title={'Testing'}
+                               description={"Unit Tests,  Storybook,   Postman,  Git"}/>
+                        <Skill style={designIcon} title={'Design'} description={"Material UI,  Ant Design"}/>
+                    </div>
+                </Fade>
             </div>
         </div>
     );
