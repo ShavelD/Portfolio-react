@@ -1,121 +1,123 @@
-@import '../../common/styles/sass/variables';
-@import '../../common/styles/sass/mixins';
-
-.project {
-  width: 100%;
-  margin-bottom: 1rem;
-  display: inline-block;
-  &:nth-child(4n+1) .img, &:nth-child(4n) .img {
-    height: 350px;
-  }
-  .img {
-    border-radius: 2px;
-    height: 250px;
-    background-position: center;
-    background-size: cover;
-    .overlay {
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition: opacity .25s ease-in-out;
-
-      &:hover {
-        opacity: 1;
-      }
-      .description {
-        padding: 1rem;
-        font-family: $TitleFontFamily;
-        h3 {
-          text-transform: uppercase;
-          font-weight: 800;
-          font-size: 1.5rem;
-          color: #070d1b;
-        }
-        p {
-          color: $secondTextColor;
-          margin-bottom: 1.5rem;
-        }
-        .links{
-          display: flex;
-          flex-direction: column;
-          .btnDemo,.btnCode {
-            margin-bottom: 0.3rem;
-            text-decoration: none;
-            border: 1px solid $secondTextColor;
-            outline: 0;
-            transition: .25s;
-            text-transform: uppercase;
-            padding: 0.4rem 0.75rem;
-            cursor: pointer;
-            color: $secondTextColor;
-            &:hover {
-              background-color: #2b2b2b;
-            }
-          }
-        }
-      }
-    }
-
-  }
-}
-
-
 //@import '../../common/styles/sass/variables';
 //@import '../../common/styles/sass/mixins';
 //
 //.project {
-//  background-color: $bgSecondColor;
-//  width: 240px;
-//  margin: 10px;
-//  display: flex;
-//  flex-direction: column;
-//  &:nth-child(4) .imgContainer, &:nth-child(8) .imgContainer {
-//    height: 150px;
+//  width: 100%;
+//  margin-bottom: 1rem;
+//  display: inline-block;
+//  &:nth-child(4n+1) .img, &:nth-child(4n) .img {
+//    height: 350px;
 //  }
-//
-//  .imgContainer {
+//  .img {
+//    border-radius: 2px;
 //    height: 250px;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    @include image(cover,center,repeat);
-//    position: relative;
+//    background-position: center;
+//    background-size: cover;
+//    .overlay {
+//      height: 100%;
+//      width: 100%;
+//      background-color: rgba(0, 0, 0, 0.5);
+//      opacity: 0;
+//      transition: opacity .25s ease-in-out;
 //
-//    &::before {
-//      position: absolute;
-//      content: "";
-//      background-color: black;
-//      top: 0;
-//      bottom: 0;
-//      left: 0;
-//      right: 0;
-//      opacity: 0.3;
+//      &:hover {
+//        opacity: 1;
+//      }
+//      .description {
+//        padding: 1rem;
+//        font-family: $TitleFontFamily;
+//        h3 {
+//          text-transform: uppercase;
+//          font-weight: 800;
+//          font-size: 1.5rem;
+//          color: #070d1b;
+//        }
+//        p {
+//          color: $secondTextColor;
+//          margin-bottom: 1.5rem;
+//        }
+//        .links{
+//          display: flex;
+//          flex-direction: column;
+//          .btnDemo,.btnCode {
+//            margin-bottom: 0.3rem;
+//            text-decoration: none;
+//            border: 1px solid $secondTextColor;
+//            outline: 0;
+//            transition: .25s;
+//            text-transform: uppercase;
+//            padding: 0.4rem 0.75rem;
+//            cursor: pointer;
+//            color: $secondTextColor;
+//            &:hover {
+//              background-color: #2b2b2b;
+//            }
+//          }
+//        }
+//      }
 //    }
 //
-//    .viewBtn {
-//      background-color: $primaryColor;
-//      padding: 10px 20px;
-//      position: relative;
-//      z-index: 1;
-//      color: $textColor;
-//    }
-//
-//  }
-//
-//
-//  .myProject {
-//    margin: 15px;
-//
-//    .titleProject {
-//      @include text($TitleFontFamily,400,16px,1.2);
-//      letter-spacing: 1px;
-//      margin: 0 0 5px;
-//    }
-//
-//    .description {
-//      @include text($TextFontFamily,400,12px,1.8);
-//    }
 //  }
 //}
+
+
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.project {
+  background-color: $bgSecondColor;
+  width: 320px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  &:nth-child(4) .imgContainer, &:nth-child(8) .imgContainer {
+    height: 150px;
+  }
+
+  .imgContainer {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include image(cover,center,repeat);
+    position: relative;
+.links {
+  z-index: 9999;
+}
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+    }
+
+    .viewBtn {
+      background-color: $primaryColor;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+      color: $textColor;
+    }
+
+  }
+
+
+  .myProject {
+    margin: 15px;
+
+    .titleProject {
+      @include text($TitleFontFamily,400,16px,1.2);
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+
+    .description {
+      @include text($TextFontFamily,400,12px,1.8);
+    }
+  }
+}
 
