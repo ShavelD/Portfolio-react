@@ -3,36 +3,36 @@
 .skillsBlock {
   min-height: 100vh;
   background-color: $bgSecondColor;
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85%;
+
+    .skills {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 4.5rem;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 360px) and (max-width: 586px) {
+      .skills {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }
 
-.title {
-  background-color: coral;
-}
-
-.skillsContainer {
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 85%;
-}
-
-.skills {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 4.5rem;
-  box-sizing: border-box;
-}
 
 @media (min-width: 360px) and (max-width: 586px) {
-  .skills {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
   .skillsBlock {
-    min-height: 70vh;
+    min-height: 40vh;
   }
 }

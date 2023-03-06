@@ -42,7 +42,7 @@ export const ContactsForm = () => {
                         <textarea className={s.textarea} placeholder={'Your Message'}
                                   {...formik.getFieldProps('message')}/>
             </label>
-            <button className={s.btn} type="submit">SEND MESSAGE</button>
+            <button type="submit">SEND MESSAGE</button>
         </form>
     )
 

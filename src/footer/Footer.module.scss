@@ -4,47 +4,40 @@
 
 .footer {
   background-color: $bgColor;
-}
-
-.padding {
   padding: 20px 0 25px 0;
-}
 
-.footerContainer {
-  flex-direction: column;
-  justify-content: flex-start;
+  .footerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
 
-}
+    .socialIcons {
+      padding: 15px 0 15px 0;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
+      .socialIcon {
+        @include image(cover, center, repeat);
+        width: 40px;
+        height: 40px;
 
-.title {
-  @include text($TitleFontFamily, 400, 25px, 1.2);
-  letter-spacing: 0;
-  margin: 0;
-  line-height: 1.15789em;
-  color: white
-}
+        &:hover {
+          transform: scale(1.2);
+          transition: 0.8s;
+        }
+      }
+    }
 
-.socialIcons {
-  padding: 15px 0 15px 0;
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.copyright {
-  color: rgba(255, 255, 255, .5)
-}
-
-.socialIcon {
-  @include image(cover, center, repeat);
-  width: 40px;
-  height: 40px;
-
-  &:hover {
-    transform: scale(1.2);
-    transition: 0.8s;
+    .copyright {
+      color: rgba(255, 255, 255, .5)
+    }
   }
 }
+
+
+
+
+
+
+
